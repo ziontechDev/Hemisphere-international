@@ -9,7 +9,7 @@ export default function AboutSec() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Left Content Side */}
           <div className="flex flex-col justify-center">
-            {/* Small Heading with Border */}
+            {/* Small Heading */}
             <div className="flex items-center gap-4 mb-4">
               <span className="w-12 h-0.5 bg-secondary"></span>
               <h4 className="text-secondary font-bold uppercase tracking-widest text-sm">
@@ -17,7 +17,7 @@ export default function AboutSec() {
               </h4>
             </div>
 
-            {/* Big Heading (2 Lines) */}
+            {/* Big Heading */}
             <h2 className="text-heading text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
               Industry Leaders in MEP, Environmental, and Building Maintenance Services
             </h2>
@@ -34,7 +34,7 @@ export default function AboutSec() {
               cater to the market by refining our products and services.
             </p>
 
-            {/* Optional Button (Using your redesigned style) */}
+            {/* Button */}
             <div>
               <Link to="/about">
                 <button className="relative group overflow-hidden px-8 py-3 border-2 border-secondary rounded-md bg-transparent text-secondary font-bold uppercase tracking-wider transition-colors duration-300 ease-in-out hover:text-white">

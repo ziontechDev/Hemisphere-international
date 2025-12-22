@@ -90,7 +90,7 @@ export default function ProductsList() {
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute sm:top-4 sm:right-4 top-2 right-2 z-110 p-1 bg-white/60 backdrop-blur-md rounded-full text-primary hover:bg-secondary hover:text-white transition shadow-lg"
+              className="absolute sm:top-4 sm:right-4 top-2 right-2 z-110 p-1 bg-white/60 backdrop-blur-md rounded-full text-heading hover:bg-secondary hover:text-white transition shadow-lg"
             >
               <X className="w-5 h-5" />
             </button>
@@ -105,12 +105,12 @@ export default function ProductsList() {
             </div>
 
             {/* Right Column: Content  */}
-            <div className="w-full lg:w-1/2 p-6 sm:p-10 lg:p-12 overflow-y-auto">
+            <div className="w-full lg:w-1/2 p-4 sm:p-8 lg:p-10 overflow-y-auto">
               <div className="sm:mb-6 mb-2">
                 <span className="text-secondary font-bold text-[10px] uppercase tracking-[0.3em] block mb-2">
                   Technical Specifications
                 </span>
-                <h3 className="text-primary text-xl sm:text-3xl lg:text-4xl font-black uppercase leading-tight">
+                <h3 className="text-heading text-xl sm:text-3xl lg:text-4xl font-black uppercase leading-tight">
                   {selectedProduct.name}
                 </h3>
               </div>
@@ -122,7 +122,7 @@ export default function ProductsList() {
                   {selectedProduct.desc}
                 </p>
               ) : (
-                <ul className="space-y-4">
+                <ul className="space-y-2">
                   {selectedProduct.desc.map((point, idx) => (
                     <li key={idx} className="flex gap-4 text-gray-600 group">
                       <div className="shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5">
@@ -136,7 +136,7 @@ export default function ProductsList() {
                 </ul>
               )}
 
-              <div className="sm:mt-12 mt-8">
+              <div className="sm:mt-12 mt-6">
                 <button
                   onClick={handleNavigate}
                   className="w-full bg-primary text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[11px] hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all duration-300"

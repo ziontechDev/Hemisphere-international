@@ -99,7 +99,7 @@ export default function Footer() {
                 "Bar",
                 "Stainless Steel",
                 "Heavy Plates",
-                "VAYUJAL Max 2200 LPD"
+                "VAYUJAL Max 2200 LPD",
               ].map((item) => (
                 <li key={item}>
                   <Link
@@ -122,8 +122,8 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-4 text-sm font-medium">
-              {quickLinks.map((item) => (
-                <li key={item}>
+              {quickLinks.map((item, index) => (
+                <li key={index}>
                   <Link
                     to={item.path}
                     className="flex items-center gap-3 hover:text-primary hover:translate-x-1 transition-all group"
@@ -189,7 +189,7 @@ export default function Footer() {
             reserved.
           </p>
 
-          {/* Square Go Top Button - Now responsive-safe */}
+          {/*  Go Top Button  */}
           <button
             onClick={scrollToTop}
             className="w-10 h-10 bg-primary text-white flex items-center justify-center hover:bg-secondary transition-all active:scale-90 shadow-md"

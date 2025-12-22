@@ -8,7 +8,7 @@ export default function ContactSec() {
       className="relative min-h-screen py-10 sm:py-20 flex items-center bg-fixed bg-center bg-cover"
       style={{ backgroundImage: `url(${contactBg})` }}
     >
-      {/* Dark Overlay to make the glass pop */}
+      {/* Dark Overlay  */}
       <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative z-10 mx-auto px-4 sm:px-10 w-full">

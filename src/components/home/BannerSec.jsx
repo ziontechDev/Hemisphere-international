@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// Import your images
+// banner images
 import bannerImg1 from "../../assets/banners/banner.jpg";
 import bannerImg2 from "../../assets/banners/banner2.jpg";
 import bannerImg3 from "../../assets/banners/banner3.jpg";
@@ -18,7 +18,7 @@ export default function BannerSec() {
 
   return (
     <section className="relative h-screen min-h-130 w-full overflow-hidden bg-black">
-      {/* Background Images with Zoom & Fade Effect */}
+      {/* Background Images */}
       {images.map((img, index) => {
         const isActive = index === currentIndex;
         return (

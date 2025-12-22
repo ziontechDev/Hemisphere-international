@@ -31,7 +31,7 @@ export default function CoreValuesSec() {
       <div className=" mx-auto px-4 sm:px-10">
         <div className="flex flex-col lg:flex-row gap-10 sm:gap-16">
           
-          {/* Left Side: Image Only */}
+          {/* Left Side: Image */}
           <div className="lg:w-1/2 order-1">
             <div className="sticky top-20">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-4/3 ">
@@ -46,7 +46,7 @@ export default function CoreValuesSec() {
 
           {/* Right Side: Headings & Stacking Cards */}
           <div className="lg:w-1/2 flex flex-col order-2">
-            {/* Headings moved to this side */}
+            {/* Headings */}
             <div className="mb-6 sm:mb-12">
               <div className="flex items-center gap-4 mb-4">
                <span className="w-12 h-0.5 bg-secondary"></span>
@@ -72,7 +72,7 @@ export default function CoreValuesSec() {
                       marginBottom: "40px"
                   }}
                 >
-                  {/* Card Header (Visible in Stack) */}
+                  {/* Card Header */}
                   <div className="flex items-center gap-5 mb-2 sm:mb-4">
                     <div className="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center shadow-lg shadow-secondary/20">
                       {item.icon}

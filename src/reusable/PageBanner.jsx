@@ -24,7 +24,7 @@ const PageBanner = ({
         </h1>
 
         {/* Breadcrumb Pill */}
-        <div className="inline-flex items-center gap-1 sm:gap-3 rounded-full border border-white/10 bg-white/5 px-3 sm:px-6 py-2 backdrop-blur-sm transition-colors hover:bg-white/10">
+        <div className="inline-flex items-center gap-1 sm:gap-3 rounded-full  bg-white/5 px-3 sm:px-6 py-2  transition-colors hover:bg-white/10">
           
           {/*  Home Link */}
           <Link
@@ -49,7 +49,7 @@ const PageBanner = ({
           ))}
 
           {/* 3. Current Page  */}
-          <ChevronRight size={14} className="text-gray-500" />
+          <ChevronRight size={14} className="text-gray-300" />
           <span className="text-sm font-semibold text-blue-400">
             {currentPage || title}
           </span>

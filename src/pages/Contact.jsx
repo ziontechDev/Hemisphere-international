@@ -18,11 +18,11 @@ export default function Contact() {
         bgImage={bannerBg}
       />
 
-      {/* --- Section 2: Contact Form & Info  --- */}
+      {/* ---  Contact Form & Info  --- */}
       <section className="relative pt-10 sm:pt-15 pb-7">
         <div className=" mx-auto px-4 sm:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column: Contact Form (Takes 2/3 space) */}
+            {/* Left Column: Contact Form  */}
             <div className="lg:col-span-2 bg-white/80 backdrop-blur-xl border border-white shadow-2xl rounded-2xl p-5 md:p-12">
               <h2 className="text-primary text-3xl font-extrabold mb-2">
                 Send a Message
