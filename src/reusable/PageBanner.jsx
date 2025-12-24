@@ -24,7 +24,7 @@ const PageBanner = ({
         </h1>
 
         {/* Breadcrumb Pill */}
-        <div className="inline-flex items-center gap-1 sm:gap-3 rounded-full  bg-white/5 px-3 sm:px-6 py-2  transition-colors hover:bg-white/10">
+        <div className="inline-flex items-center gap-1 sm:gap-3 rounded-full shadow-sm shadow-white/20  bg-white/5 px-3 sm:px-6 py-2  transition-colors hover:bg-white/10">
           
           {/*  Home Link */}
           <Link
