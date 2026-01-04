@@ -7,6 +7,7 @@ import {
   Construction,
   Bird,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const divisions = [
   {
@@ -92,9 +93,11 @@ export default function DivisionSec() {
 
         {/* View All Button */}
         <div className="mt-12 text-center">
+          <Link to="/divisions">
           <button className="bg-secondary text-white px-10 py-3 font-bold uppercase tracking-widest text-sm rounded shadow-lg hover:bg-primary transition-colors duration-300">
             View All
           </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -44,7 +44,7 @@ export const divisionsData = {
       title: "HVAC Duct Manufacturing",
       img: ductImg,
       type: "paragraph",
-      desc: "We provide reinsulated ducts as per the client’s requirement Please call us to submit our economic and best requirements as per the requirement",
+      desc: "We provide reinsulated ducts as per the client's requirement Please call us to submit our economic and best requirements as per the requirement",
     },
     {
       title: "Kitchen Solutions",
@@ -210,7 +210,7 @@ export const divisionsData = {
       title: "VAYUJAL 140 LPD",
       img: v140Img,
       desc: [
-        "Best Suited for: Large Households and Small Organizations (10 – 50 users)",
+        "Best Suited for: Large Households and Small Organizations (10 - 50 users)",
         "Actual size (LxWxH): 60*70 x 130 (cms)",
         "Power Efficiency: 0.33 kWh /Ltr (at 70% RH and 30 °C)",
         "Built-in storage capacity: 50 1trs.(SS 304)",
@@ -221,7 +221,7 @@ export const divisionsData = {
       type: "list",
     },
     {
-      title: "VAYUJAL HOME – 40 LPD",
+      title: "VAYUJAL HOME - 40 LPD",
       img: v40Img,
       desc: [
         "Best suited for: Domestic use",

@@ -108,7 +108,7 @@ export const productsData = [
     name: "VAYUJAL 140 LPD",
     img: v140Img,
     desc: [
-      "Best Suited for: Large Households and Small Organizations (10 – 50 users)",
+      "Best Suited for: Large Households and Small Organizations (10 - 50 users)",
       "Actual size (LxWxH): 60*70 x 130 (cms)",
       "Power Efficiency: 0.33 kWh /Ltr (at 70% RH and 30 °C)",
       "Built-in storage capacity: 50 1trs.(SS 304)",
@@ -119,7 +119,7 @@ export const productsData = [
     type: "points",
   },
   {
-    name: "VAYUJAL HOME – 40 LPD",
+    name: "VAYUJAL HOME - 40 LPD",
     img: v40Img,
     desc: [
       "Best suited for: Domestic use",
