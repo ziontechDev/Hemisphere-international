@@ -100,7 +100,7 @@ export default function Contact() {
                       <p className="text-xs uppercase tracking-widest opacity-80">
                         Call Us
                       </p>
-                      <p className="md:text-lg text-sm font-medium">+968-97892123</p>
+                      <p className="md:text-lg text-sm font-medium">+968 94145176</p>
                     </div>
                   </div>
 

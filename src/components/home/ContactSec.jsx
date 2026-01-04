@@ -67,7 +67,7 @@ export default function ContactSec() {
                 </div>
                 <div>
                   <p className="text-white text-xs font-bold uppercase tracking-widest mb-1">Phone Number</p>
-                  <p className="text-white text-sm sm:text-xl font-semibold">+968-97892123</p>
+                  <p className="text-white text-sm sm:text-xl font-semibold">+968 94145176</p>
                 </div>
               </div>
 

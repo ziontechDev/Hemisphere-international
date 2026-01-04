@@ -152,7 +152,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <FaPhoneAlt className="text-primary shrink-0" />
-                <span className="text-gray-600">+968-97892123</span>
+                <span className="text-gray-600">+968 94145176</span>
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-primary shrink-0" />
