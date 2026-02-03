@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { X, ZoomIn } from "lucide-react";
-// import { projectsData } from "../../data/projects";
-import projectsData from "../../data/projects.json"
+import { projectsData } from "../../data/projects";
+
 
 export default function ProjectsList() {
   const [activeTab, setActiveTab] = useState("completed");
