@@ -18,8 +18,8 @@ export default function Header() {
   // menu items with their paths
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },    
-    { name: "Divisions", path: "/divisions" },    
+    { name: "About Us", path: "/about" },
+    { name: "Divisions", path: "/divisions" },
     { name: "Products", path: "/products" },
     { name: "Projects", path: "/projects" },
     { name: "Contact Us", path: "/contact" },
@@ -70,7 +70,8 @@ export default function Header() {
               </div>
               <span>|</span>
               <div className="flex items-center gap-1">
-                <Mail className="w-4 h-4" />info@hemisphere.com
+                <Mail className="w-4 h-4" />
+                info@hemiinternational.com
               </div>
             </div>
             {/* right section */}
@@ -84,9 +85,16 @@ export default function Header() {
               <div className="flex items-center gap-1 text-gray-300 cursor-pointer hover:text-white">
                 <FaInstagram className="w-4 h-4" />
               </div>
-              <div className="flex items-center gap-1 text-gray-300 cursor-pointer hover:text-white">
+
+              {/* LinkedIn Link */}
+              <a
+                href="https://www.linkedin.com/company/hemisphere-international-business-solutions-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-gray-300 cursor-pointer hover:text-white"
+              >
                 <FaLinkedinIn className="w-4 h-4" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -170,10 +178,10 @@ export default function Header() {
                 className="w-10 h-10 object-contain"
               />
               <div className="leading-tight">
-                <div className="text-xs font-bold text-primary">HEMISPHERE INTERNATIONAL</div>
-                <div className="text-[10px] text-gray-500">
-                  Always Ahead
+                <div className="text-xs font-bold text-primary">
+                  HEMISPHERE INTERNATIONAL
                 </div>
+                <div className="text-[10px] text-gray-500">Always Ahead</div>
               </div>
             </div>
 
@@ -203,10 +211,10 @@ export default function Header() {
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary" />
                 +968 94145176
-              </div>              
+              </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
-                info@hemisphere.com
+                info@hemiinternational.com
               </div>
             </div>
           </div>
@@ -220,7 +228,13 @@ export default function Header() {
 
 function GetQuoteButton() {
   return (
-    <Link to="/contact">
+    <a
+      href={`https://wa.me/96894145176?text=${encodeURIComponent(
+        "Hello, I would like to request a quote."
+      )}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <button className="relative group overflow-hidden px-8 py-3 border-2 rounded-md bg-secondary border-secondary text-white font-bold uppercase tracking-wider transition-colors duration-300 ease-in-out hover:text-secondary">
         {/* The Animated Background Layer */}
         <span className="absolute inset-y-0 left-0 w-0 bg-white transition-all duration-500 ease-in-out group-hover:w-full" />
@@ -228,6 +242,6 @@ function GetQuoteButton() {
         {/* The Button Text */}
         <span className="relative z-10">Request A Quote</span>
       </button>
-    </Link>
+    </a>
   );
 }

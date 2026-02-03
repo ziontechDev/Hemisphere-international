@@ -100,7 +100,9 @@ export default function Contact() {
                       <p className="text-xs uppercase tracking-widest opacity-80">
                         Call Us
                       </p>
-                      <p className="md:text-lg text-sm font-medium">+968 94145176</p>
+                      <p className="md:text-lg text-sm font-medium">
+                        +968 94145176
+                      </p>
                     </div>
                   </div>
 
@@ -113,7 +115,9 @@ export default function Contact() {
                       <p className="text-xs uppercase tracking-widest opacity-80">
                         Email Us
                       </p>
-                      <p className="md:text-lg text-sm font-medium">info@hemisphere.com</p>
+                      <p className="md:text-lg text-sm font-medium">
+                        info@hemiinternational.com
+                      </p>
                     </div>
                   </div>
 
@@ -127,7 +131,8 @@ export default function Contact() {
                         Our Office
                       </p>
                       <p className="md:text-lg text-sm font-medium">
-                        123 Industrial Zone, Muscat, Oman
+                        Office no 22 2A, Building number 603, Bait Al Bahja, Al
+                        Wadi Al Kabir,Muscat
                       </p>
                     </div>
                   </div>
@@ -141,11 +146,11 @@ export default function Contact() {
                         Business Hours
                       </p>
                       <p className="md:text-lg text-sm font-medium">
-                        Monday — Friday: 9am - 6pm
+                        Sunday to Thursday, 9 AM to 6 PM
                       </p>
-                      <p className="md:text-lg text-sm font-medium">
+                      {/* <p className="md:text-lg text-sm font-medium">
                         Saturday: 10am - 2pm
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -159,15 +164,20 @@ export default function Contact() {
                     {[
                       { icon: <FaFacebookF />, link: "#" },
                       { icon: <FaInstagram />, link: "#" },
-                      { icon: <FaLinkedinIn />, link: "#" },
+                      {
+                        icon: <FaLinkedinIn />,
+                        link: "https://www.linkedin.com/company/hemisphere-international-business-solutions-llc",
+                      },
                       { icon: <FaXTwitter />, link: "#" },
-                    ].map((social, idx) => (
+                    ].map(({ icon, link }, idx) => (
                       <a
                         key={idx}
-                        href={social.link}
+                        href={link}
+                        target={link !== "#" ? "_blank" : "_self"}
+                        rel="noopener noreferrer"
                         className="w-11 h-11 rounded-lg bg-white/10 border border-white/10 flex items-center justify-center text-white transition-all duration-300 hover:bg-secondary hover:border-secondary hover:-translate-y-1"
                       >
-                        {social.icon}
+                        {icon}
                       </a>
                     ))}
                   </div>

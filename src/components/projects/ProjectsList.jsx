@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { X, ZoomIn } from "lucide-react";
-import { projectsData } from "../../data/projects";
+// import { projectsData } from "../../data/projects";
+import projectsData from "../../data/projects.json"
 
 export default function ProjectsList() {
   const [activeTab, setActiveTab] = useState("completed");
@@ -83,6 +84,8 @@ export default function ProjectsList() {
                   <img
                     src={project.img}
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   {/* Hover Overlay */}

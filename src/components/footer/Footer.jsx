@@ -45,6 +45,16 @@ export default function Footer() {
     },
   ];
 
+  const socialLinks = [
+    { Icon: FaFacebookF, link: "#" },
+    { Icon: FaTwitter, link: "#" },
+    { Icon: FaInstagram, link: "#" },
+    {
+      Icon: FaLinkedinIn,
+      link: "https://www.linkedin.com/company/hemisphere-international-business-solutions-llc",
+    },
+  ];
+
   return (
     <footer className="bg-grayBg text-gray-800">
       {/* ================= 1. CALL TO ACTION SECTION ================= */}
@@ -147,7 +157,8 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
                 <span className="text-gray-600">
-                  123 Industrial Zone, Muscat, Oman
+                  Office no 22 2A, Building number 603, Bait Al Bahja, Al Wadi
+                  Al Kabir,Muscat
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -156,22 +167,24 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-primary shrink-0" />
-                <span className="text-gray-600">info@hemisphere.com</span>
+                <span className="text-gray-600">
+                  info@hemiinternational.com
+                </span>
               </div>
 
               {/* Social Icons */}
               <div className="flex items-center gap-4 pt-4">
-                {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
-                  (Icon, idx) => (
-                    <a
-                      key={idx}
-                      href="#"
-                      className="w-9 h-9 flex items-center justify-center bg-primary text-white hover:bg-secondary transition-colors duration-300 rounded-sm"
-                    >
-                      <Icon size={14} />
-                    </a>
-                  )
-                )}
+                {socialLinks.map(({ Icon, link }, idx) => (
+                  <a
+                    key={idx}
+                    href={link}
+                    target={link !== "#" ? "_blank" : "_self"}
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 flex items-center justify-center bg-primary text-white hover:bg-secondary transition-colors duration-300 rounded-sm"
+                  >
+                    <Icon size={14} />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
@@ -185,7 +198,7 @@ export default function Footer() {
           <div className="hidden md:block w-10"></div>
 
           <p className="text-xs font-bold text-gray-500 uppercase tracking-widest text-center">
-            © {new Date().getFullYear()} Hemisphere International. All rights
+            © {new Date().getFullYear()} Hemisphere international business solution . All rights
             reserved.
           </p>
 

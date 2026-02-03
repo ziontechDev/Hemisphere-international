@@ -78,7 +78,7 @@ export default function ContactSec() {
                 </div>
                 <div>
                   <p className="text-white text-xs font-bold uppercase tracking-widest mb-1">Email Address</p>
-                  <p className="text-white text-sm sm:text-xl font-semibold">info@hemisphere.com</p>
+                  <p className="text-white text-sm sm:text-xl font-semibold">info@hemiinternational.com</p>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function ContactSec() {
             {/* Socials / Extra Info */}
             <div className="mt-12 pt-8 border-t border-white/10">
               <p className="text-gray-300 text-sm">
-                Available Monday - Friday, 9:00 AM to 6:00 PM
+                Available Sunday to Thursday, 9 AM to 6 PM
               </p>
             </div>
           </div>
